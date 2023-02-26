@@ -3,7 +3,7 @@ import { AiOutlineRightCircle } from 'react-icons/ai';
 import React from 'react';
 import InstaCard from './instaCard'
 import axios from 'axios';
-export default function ytSlider() {
+export default function InstaSlider() {
 
     const [data, setData] = React.useState([])
 

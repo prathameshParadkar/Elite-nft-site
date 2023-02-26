@@ -3,7 +3,7 @@ import { AiOutlineRightCircle } from 'react-icons/ai';
 import React from 'react';
 import ArticleCard from './articleCard'
 import axios from 'axios';
-export default function ytSlider() {
+export default function ArticleSlider() {
 
     const [data, setData] = React.useState([])
 
