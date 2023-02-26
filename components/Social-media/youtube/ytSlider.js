@@ -4,7 +4,7 @@ import { getCookies, getCookie, setCookie, deleteCookie } from 'cookies-next';
 import React from 'react';
 import YtCard from './ytCard'
 import axios from 'axios';
-export default function ytSlider() {
+export default function YtSlider() {
 
     const [data, setData] = React.useState([])
 

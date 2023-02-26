@@ -26,7 +26,7 @@ export default function NewsLetter() {
 
                     </p>
                     <h1 className='text-center text-4xl mt-2 styled-text'>
-                        "SUBSCRIBE NOW"
+                    &quot;SUBSCRIBE NOW&quot;
                     </h1>
 
 

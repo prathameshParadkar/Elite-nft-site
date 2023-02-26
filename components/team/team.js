@@ -16,10 +16,10 @@ export default function Team() {
             <div className='flex items-center justify-center'>
                 <Image src={ourStory} className="h-[35rem] mr-20 ml-48" />
                 <p className={`${lato.className} text-2xl styled-text mr-48 leading-relaxed`}>
-                    I'm Yash Aka Busibeast, founder of Elite NFT, and I'm here to tell you the exciting story of how Elite NFT began and what our vision is.<br />
-                    Elite NFT started with me doing Freelance Gigs and steadily getting many more Clients which I couldn't handle single-handedly so I started hiring my friends for help! That's how Elite NFT started.<br />
+                    I&apos;m Yash Aka Busibeast, founder of Elite NFT, and I&apos;m here to tell you the exciting story of how Elite NFT began and what our vision is.<br />
+                    Elite NFT started with me doing Freelance Gigs and steadily getting many more Clients which I couldn&apos;t handle single-handedly so I started hiring my friends for help! That&apos;s how Elite NFT started.<br />
                     We were basically just a design studio (still our forte) and slowly and steadily expanded into Development, Consultancy, and Social Media Management. Today we serve Various Clients and Brands from all over the Globe and help them embrace Web3 with our Creative Ideas.<br />
-                    Fun Fact: Elite NFT was valued at a million dollars just a month after I started the company. I don't know why, but that's the truth.<br />
+                    Fun Fact: Elite NFT was valued at a million dollars just a month after I started the company. I don&apos;t know why, but that&apos;s the truth.<br />
                     Our Vision at Elite NFT is to make Web3 accessible to everyone and play a significant role in the mass adoption of this technology.<br/>
                     So fasten your seatbelts and join us in the revolution to make web3 accessible!
                 </p>

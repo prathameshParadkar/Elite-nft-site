@@ -5,7 +5,7 @@ import smallLogo from '../../../images/small-logo.png'
 export default function ytCard(props) {
 
     return (
-        <a href={`https://www.youtube.com/watch?v=${props.videoId}`} target="_blank" className='flex flex-col mr-16 tablet:mr-12 mobile:mr-8 p-4 py-6 rounded-xl yt-card items-center cursor-pointer'
+        <a href={`https://www.youtube.com/watch?v=${props.videoId}`} target="_blank" rel="noreferrer" className='flex flex-col mr-16 tablet:mr-12 mobile:mr-8 p-4 py-6 rounded-xl yt-card items-center cursor-pointer'
         // onClick={redirectToYt}
         >
             <Image src={props.img} width={480} height={360} className="w-80 mobile:w-60 mobile:h-[133px] h-[175px] object-cover rounded-xl" />
