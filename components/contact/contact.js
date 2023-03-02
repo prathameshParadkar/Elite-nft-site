@@ -1,38 +1,51 @@
 import React from 'react'
-import Image from 'next/image'
-import calix from '../../images/calix.png'
-import polygon from '../../images/polygon.png'
-import cronos from '../../images/cronos.png'
-import bg from '../../images/wave-pattern.png'
-import bf from '../../images/bottomfade.png'
+import { animate, motion } from 'framer-motion'
 
 export default function Contact() {
+    const [width, setWidth] = React.useState(0)
+    const [isMobile, setIsMobile] = React.useState(false)
+
+    React.useEffect(() => {
+        if (window.innerWidth <= 900) {
+            setIsMobile(true)
+        }
+    }, [])
+    const contactUs = React.useRef(null)
+    React.useEffect(() => {
+        setTimeout(() => {
+            setWidth(prev => contactUs.current.clientWidth)
+            console.log(width)
+        }, 1000)
+
+    }, []);
     return (
-        <div  className='bg-[#1A1A1A] bg-cover bg-no-repeat w-full '>
-            <div className='pt-20 space-y-[-110px]'>
+        <motion.div
+            className='flex pt-10 pb-10 scroll-smooth'
+            initial={{
+                x: 0
+            }}
+            animate={{
+                x: [0, -(width + 30) * (1)]
+            }}
 
-                <div className=' w-[80%] grid grid-cols-3 m-auto  friends-card rounded-xl p-6 pl-8 pr-8'>
-                    <Image src={calix} className="h-[120px] w-[100px] " />
-                    <Image src={polygon} className="h-[74px]" />
-                    <Image src={cronos} className="h-[45px]" />
-
-                </div>
-                <h1 className='text-[12rem] text-[#7519ffd9] merch-elite-text font-["Furore"] opacity-[0.6] text-center'>
-                    OUR FRIENDS
-                </h1>
-            </div>
-
-            <Image src={bg} className="w-full" />
-
-            <div>
-                <h1 className='text-[11rem] text-[#7519ffd9] merch-elite-text font-["Furore"]  text-center whitespace-nowrap ml-5 mr-5 ml-10'>
+            transition={{
+                ease: 'linear',
+                transition: 'smooth',
+                repeat: Infinity,
+                duration: isMobile ? 25 : 23
+            }}
+        >
+            <h1 className='text-[11rem] text-[#7519ffd9] merch-elite-text font-["Furore"]  text-center whitespace-nowrap ml-10 mobile:text-8xl'
+                ref={contactUs}
+            >
                 CONTACT US - Tell us about your ideas
-                </h1>
-            </div>
+            </h1>
+            <h1 className='text-[11rem] text-[#7519ffd9] merch-elite-text font-["Furore"]  text-center whitespace-nowrap ml-10 mr-10 mobile:text-8xl'
+            >
+                CONTACT US - Tell us about your ideas
+            </h1>
 
-            <Image src={bf} className="w-full" />
 
-
-        </div>
+        </motion.div>
     )
 }

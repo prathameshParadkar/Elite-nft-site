@@ -58,8 +58,8 @@ export default function YtSlider() {
         slider.scrollLeft = slider.scrollLeft - 500;
     }
     return (
-        <div className="flex flex-col mt-10 tablet:mt-14 mobile:mt-10">
-            <div className='flex self-end mr-6 text-white text-2xl w-14 justify-between'>
+        <div className="flex flex-col mt-10  tablet:mt-14 mobile:mt-10">
+            <div className='flex self-end mr-6  mobile:m-auto text-white text-2xl w-14 justify-between'>
                 <AiOutlineLeftCircle className='cursor-pointer '
                     onClick={slideLeft}
                 />

@@ -10,9 +10,12 @@ import Media from '../components/Social-media/media'
 import Discord from '../components/discord/discord'
 import Merch from '@/components/merch/merch'
 import Scribbles from '@/components/scribbles/scribbles'
-import Contact from '@/components/contact/contact'
 import bg from '../images/wave-pattern.png'
 import Footer from '@/components/footer/footer'
+import Friends from '@/components/friends/friends'
+import ScrollToTopButton from '@/components/utils/scrollToTop'
+
+
 
 export default function Home() {
   const [isMobile, setIsMobile] = React.useState(false)
@@ -20,9 +23,11 @@ export default function Home() {
     if (window.innerWidth <= 764){
         setIsMobile(true)
     }
+    
 }, [])
   return (
     <div className=' overflow-hidden bg-[#1A1A1A]'>
+      <ScrollToTopButton />
       <Main isMobile = {isMobile} />
       <div className='bg-[#1A1A1A] desktop:space-y-[-250px] tablet:space-y-[-100px]'>
         <Evolve isMobile={isMobile} />
@@ -33,7 +38,7 @@ export default function Home() {
       <Discord />
       <Merch />
       <Scribbles isMobile={isMobile} />
-      <Contact />
+      <Friends />
       <Footer isMobile={isMobile} />
     </div>
   )

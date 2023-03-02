@@ -7,19 +7,22 @@ export default function Main(props) {
     const [toggle, setToggle] = React.useState(false)
     return (
         <div className="h-screen overflow-hidden relative flex ">
-            <Image className='object-cover'
-                src={homeBg}
+            <video className='object-cover'
+                
                 width={100200}
-            />
+                loop  autoPlay muted
+            >
+                <source src={'/homeBg.mp4'} />
+            </video >
             <Navbar toggleHandler={setToggle} isMobile={props.isMobile} />
             <Menu toggle={toggle} toggleHandler={setToggle} />
-            
-                <p className='absolute left-1/2 translate-x-[-50%] desktop:text-2xl desktop:bottom-44 tablet:bottom-32 whitespace-nowrap font-["Furore"] styled-text'>
+
+            <p className='absolute left-1/2 translate-x-[-50%] desktop:text-2xl desktop:bottom-44 tablet:bottom-32 whitespace-nowrap font-["Furore"] styled-text'>
                 &quot;Get Ready For The Future.&quot;
             </p>
-            
-            <button className='absolute  left-1/2 translate-x-[-50%] desktop:bottom-24 tablet:bottom-16 bg-[#7534FF] px-6 py-4 rounded-lg font-bold font-["Lexend"] desktop:text-sm tablet:text-xs text-white'>
-            ENTER OUR WORLD
+
+            <button className='absolute  left-1/2 translate-x-[-50%] desktop:bottom-24 tablet:bottom-16  px-6 py-4 rounded-lg font-bold font-["Lexend"] desktop:text-sm tablet:text-xs border-solid border-[1px] text-white hover:text-white border-white hover:border-[#7534FF]  fill fill-button'>
+                ENTER OUR WORLD
             </button>
         </div>
     )
