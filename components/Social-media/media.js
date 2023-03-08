@@ -5,7 +5,7 @@ import ArticleSlider from "./article/articleSlider"
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 
-export default function media() {
+export default function Media() {
     
     React.useEffect(() => {
         Aos.init();
