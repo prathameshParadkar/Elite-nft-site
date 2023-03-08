@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 
+
 export default function Card(props) {
     
+
+
     return (
         <div className="relative cursor-none">
             <div className="p-4 rounded-[33px] hover:border-[1px] border-[#7534FF]">

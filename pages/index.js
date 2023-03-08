@@ -32,7 +32,7 @@ export default function Home() {
       <div className='bg-[#1A1A1A] desktop:space-y-[-250px] tablet:space-y-[-100px]'>
         <Evolve isMobile={isMobile} />
         <Image src={bg} className='w-full' />
-        <Service />
+        <Service  />
       </div>
       <Media />
       <Discord />

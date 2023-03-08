@@ -4,7 +4,15 @@ import { getCookies, getCookie, setCookie, deleteCookie } from 'cookies-next';
 import React from 'react';
 import YtCard from './ytCard'
 import axios from 'axios';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
+
 export default function YtSlider() {
+
+    React.useEffect(() => {
+        Aos.init();
+    }, [])
 
     const [data, setData] = React.useState([])
 
@@ -65,7 +73,7 @@ export default function YtSlider() {
                 />
                 <AiOutlineRightCircle className='cursor-pointer' onClick={slideRight} />
             </div>
-            <div className='pl-16 tablet:pl-12 mobile:pl-8 flex mt-10 overflow-x-auto scroll scroll-smooth hide-scrollbar' id="YtSlider">
+            <div data-aos="slide-left" data-aos-duration="600" className='pl-16 tablet:pl-12 mobile:pl-8 flex mt-10 overflow-x-auto scroll scroll-smooth hide-scrollbar' id="YtSlider">
                 {data.length > 0 && data.map((item, index) => {
                     if (index == data.length - 1) {
                         return
