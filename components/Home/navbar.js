@@ -39,7 +39,7 @@ export default function Navbar(props) {
                     </a>
                 </li>
                 <li className={iconStyle}>
-                    <a href="https://www.instagram.com/_elitenft_/" target="_blank">
+                    <a href="https://www.instagram.com/_elitenft_/" target="_blank"  rel="noreferrer" >
                         <FaInstagram />
                     </a>
                 </li>

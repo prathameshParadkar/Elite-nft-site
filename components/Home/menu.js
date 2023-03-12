@@ -74,7 +74,7 @@ export default function Menu(props) {
 
         <ul className='text-white tablet:mt-8 tablet:text-2xl tablet:space-x-10 flex flex-row desktop:hidden tablet:hidden mobile:inline-flex justify-center ml-8'>
           <li className={iconStyle}>
-            <a href="https://www.instagram.com/_elitenft_/" target="_blank" >
+            <a href="https://www.instagram.com/_elitenft_/" target="_blank" rel="noreferrer" >
               <GrFacebookOption />
             </a>
           </li>
