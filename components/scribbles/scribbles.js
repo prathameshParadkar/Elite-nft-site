@@ -25,7 +25,7 @@ export default function Scribbles(props) {
                 <h1 data-aos="fade-up" id="scribble-solid-text" className={`${londrinaSolid.className} `}>Scribbles</h1>
                 </div>
                 <div>
-                    <button className='text-white font-["Furore"] px-20 py-4 rounded-lg text-xl bg-[#7534FF] discord-button-style tablet:hidden'>VIEW ON OPENSEA NFT</button>
+                    <button data-aos="fade-up" className='text-white font-["Furore"] px-20 py-4 rounded-lg text-xl discord-button-style tablet:hidden border-white border-[1px] border-solid hover:border-[#7534FF] fill fill-button'>VIEW ON OPENSEA NFT</button>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ export default function Scribbles(props) {
                 <Image src={scribbleCard} height={!props.isMobile ? 550 : 250} />
             </div>
             <div>
-                <button data-aos="fade-left" className='text-white font-["Furore"] px-20 py-4 rounded-lg text-xl bg-[#7534FF] discord-button-style mobile:text-sm mobile:px-10 mobile:py-2 mb-16 desktop:hidden'>VIEW ON OPENSEA NFT</button>
+                <button data-aos="fade-left" className='text-white font-["Furore"] px-20 py-4 rounded-lg text-xl  discord-button-style mobile:text-sm mobile:px-10 mobile:py-2 mb-16 desktop:hidden border-white border-[1px] border-solid hover:border-[#7534FF]  fill fill-button'>VIEW ON OPENSEA NFT</button>
             </div>
         </div>
     )

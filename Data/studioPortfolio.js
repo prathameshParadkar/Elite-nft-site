@@ -13,7 +13,7 @@ import l3 from '../images/studios/l3.png'
 
 export const studioPortfolio = [
     [
-        TwoD2, sm2, l1
+        TwoD1, TwoD2, TwoD3, threeD1, threeD2, threeD3, sm1, sm2, sm3,  l1, l2, l3
     ],
     [
         TwoD1, TwoD2, TwoD3

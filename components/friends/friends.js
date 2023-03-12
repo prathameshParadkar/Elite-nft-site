@@ -28,9 +28,8 @@ export default function Friends() {
             setIsMobile(true)
         }
         setTimeout(() => {
-            setWidth(prev => friendSlider.current.clientWidth)
-            console.log(width)
-        }, 1000)
+            setWidth(friendSlider.current.clientWidth);
+        }, 1500)
     
         Aos.init()
     }, []);

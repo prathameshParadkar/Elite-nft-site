@@ -11,6 +11,7 @@ import bg from '../../images/wave-pattern.png'
 import Liqy from '@/components/studios/liqy/liqy'
 import Footer from '@/components/footer/footer'
 import ScrollToTopButton from '@/components/utils/scrollToTop'
+import eliteLogo from '../../images/elite-studio.png'
 
 export default function Home() {
     const [isMobile, setIsMobile] = React.useState(false)
@@ -19,12 +20,17 @@ export default function Home() {
             setIsMobile(true)
         }
     }, [])
-    return (
+    return (<>
+        <Head>
+            <title>Elite NFT Studios</title>
+            <link rel="icon" href={eliteLogo.src}
+                type="image/x-icon"></link>
+        </Head>
         <div className=' overflow-hidden bg-[#191919]'>
             <ScrollToTopButton />
             <StudioHome isMobile={isMobile} />
             <StudioServices />
-            <Work />
+            <Work isMobile={isMobile} />
             <div className='desktop:space-y-[-250px] tablet:space-y-[-170px] mobile:space-y-[-100px]'>
                 <Portfolio />
                 <Image src={bg} alt="Wave-pattern" className='w-full' />
@@ -32,5 +38,6 @@ export default function Home() {
             </div>
             <Footer />
         </div>
+    </>
     )
 }

@@ -32,7 +32,7 @@ export default function Merch() {
                 </div>
                 <div className='flex tablet:flex-col-reverse  tablet:mt-12 justify-center items-center desktop:m-auto'>
                     <div className='text-center tablet:block text-white'>
-                        <button className='font-["Furore"] px-20 py-4 desktop:hidden rounded-lg text-xl bg-[#7534FF] discord-button-style mobile:text-sm mobile:px-10 mobile:py-2 ' data-aos = "fade-up">
+                        <button className='font-["Furore"] px-20 py-4 desktop:hidden rounded-lg text-xl discord-button-style mobile:text-sm mobile:px-10 mobile:py-2 border-white border-[1px] border-solid hover:border-[#7534FF]  fill fill-button' data-aos = "fade-up">
                             BUY NOW
                         </button>
                     </div>
@@ -48,7 +48,7 @@ export default function Merch() {
                         <p className={`text-center ${lato.className} text-lg mobile:text-sm  tablet:text-xl tablet:w-[60%] mobile:w-[75%]  mt-16 mobile:mt-8 w-[719px] styled-text `} data-aos={isMobile ? "fade-up" : "fade-left"}>Get really awesome T shirts with crazy concepts and slangs and let the world know about the biggest thing that they will witness in their lifetime</p>
 
                         <div className='text-center mt-10 tablet:hidden '>
-                            <button data-aos={isMobile ? "fade-up" : "fade-left "} className='font-["Furore"] px-20 py-4 rounded-lg text-xl bg-[#7534FF] discord-button-style '>
+                            <button data-aos={isMobile ? "fade-up" : "fade-left "} className='font-["Furore"] px-20 py-4 rounded-lg text-xl  discord-button-style border-white border-[1px] border-solid hover:border-[#7534FF]  fill fill-button'>
                                 BUY NOW
                             </button>
                         </div>

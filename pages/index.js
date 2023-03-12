@@ -14,32 +14,39 @@ import bg from '../images/wave-pattern.png'
 import Footer from '@/components/footer/footer'
 import Friends from '@/components/friends/friends'
 import ScrollToTopButton from '@/components/utils/scrollToTop'
-
+import eliteLogo from '../images/elite-logo.png'
 
 
 export default function Home() {
   const [isMobile, setIsMobile] = React.useState(false)
-  React.useEffect(() =>{
-    if (window.innerWidth <= 764){
-        setIsMobile(true)
+  React.useEffect(() => {
+    if (window.innerWidth <= 764) {
+      setIsMobile(true)
     }
-    
-}, [])
+
+  }, [])
   return (
-    <div className=' overflow-hidden bg-[#1A1A1A]'>
-      <ScrollToTopButton />
-      <Main isMobile = {isMobile} />
-      <div className='bg-[#1A1A1A] desktop:space-y-[-250px] tablet:space-y-[-100px]'>
-        <Evolve isMobile={isMobile} />
-        <Image src={bg} className='w-full' />
-        <Service  />
+    <>
+      <Head>
+        <title>Elite NFT</title>
+        <link rel = "icon" href = {eliteLogo.src} 
+        type = "image/x-icon"></link>
+      </Head>
+      <div className=' overflow-hidden bg-[#1A1A1A]'>
+        <ScrollToTopButton />
+        <Main isMobile={isMobile} />
+        <div className='bg-[#1A1A1A] desktop:space-y-[-250px] tablet:space-y-[-100px]'>
+          <Evolve isMobile={isMobile} />
+          <Image src={bg} className='w-full' />
+          <Service />
+        </div>
+        <Media />
+        <Discord />
+        <Merch />
+        <Scribbles isMobile={isMobile} />
+        <Friends />
+        <Footer isMobile={isMobile} />
       </div>
-      <Media />
-      <Discord />
-      <Merch />
-      <Scribbles isMobile={isMobile} />
-      <Friends />
-      <Footer isMobile={isMobile} />
-    </div>
+    </>
   )
 }
